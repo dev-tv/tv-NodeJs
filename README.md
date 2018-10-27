@@ -1,8 +1,8 @@
-# tv-NodeJs
+## tv-NodeJs
 
-# 1) COD
+## 1) COD
 
-# Folder Structure
+## Folder Structure
 	  |
 	  |----client (This is the place for your application front-end files.)
 	  |
@@ -27,5 +27,5 @@
 	  |
 	  |
   
-# Technology & tools
+## Technology & tools
  Nodejs, JavaScript, AWS S3 bucket, AWS Lambda function, Firebase Cloud Messaging(FCM), Loopback, Postgresql(Database), PostGis
