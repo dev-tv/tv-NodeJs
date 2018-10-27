@@ -1,0 +1,28 @@
+{
+  "db": {
+    "host": "localhost",
+    "port": 5432,
+    "url": "",
+    "database": "COD",
+    "password": "",
+    "name": "db",
+    "user": "",
+    "connector": "postgresql"
+  },
+  "mail": {
+    "name": "mail",
+    "connector": "mail",
+    "transports": [
+      {
+        "type": "SMTP",
+        "host": "smtp.gmail.com",
+        "secureConnection": true,
+        "port": 465,
+        "auth": {
+          "user": "",
+          "pass": ""
+        }
+      }
+    ]
+  }
+}

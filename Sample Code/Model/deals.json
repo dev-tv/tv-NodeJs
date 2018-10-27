@@ -1,0 +1,124 @@
+{
+  "name": "Deals",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "businessId": {
+      "type": "number",
+      "required": true,
+      "index": true
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "seoTitle": {
+      "type": "string"
+    },
+    "seoDescription": {
+      "type": "string"
+    },
+    "tnc": {
+      "type": "string"
+    },
+    "imageName": {
+      "type": "string",
+      "required": true
+    },
+    "isFeatured": {
+      "type": "boolean"
+    },
+    "isSelected": {
+      "type": "boolean"
+    },
+    "categoryId": {
+      "type": "number",
+      "required": true
+    },
+    "stateId": {
+      "type": "number",
+      "required": true
+    },
+    "cityId": {
+      "type": "number",
+      "required": true
+    },
+    "startDate": {
+      "type": "string",
+      "required": true
+    },
+    "expireDate": {
+      "type": "string",
+      "required": true
+    },
+    "dealOffered": {
+      "type": "number"
+    },
+    "retailValue": {
+      "type": "number"
+    },
+    "dealPrice": {
+      "type": "number"
+    },
+    "offerPercentage": {
+      "type": "number"
+    },
+    "dealType": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "string"
+    },
+    "promoCode": {
+      "type": "string"
+    },
+    "shoppingCartUrl": {
+      "type": "string"
+    },
+    "status": {
+      "type": "number",
+      "required": true
+    },
+    "viewsCount": {
+      "type": "number",
+      "default": 0
+    },
+    "redeemCount": {
+      "type": "number",
+      "default": 0
+    },
+    "shareCount": {
+      "type": "number",
+      "default": 0
+    },
+    "createdAt": {
+      "type": "number",
+      "required": true,
+      "postgresql": {
+        "dataType": "bigint"
+      }
+    },
+    "updatedAt": {
+      "type": "number",
+      "required": true,
+      "postgresql": {
+        "dataType": "bigint"
+      }
+    }
+  },
+  "validations": [],
+  "relations": {
+    "business": {
+      "type": "belongsTo",
+      "model": "Business",
+      "foreignKey": "businessId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
